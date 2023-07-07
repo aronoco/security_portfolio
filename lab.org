@@ -33,7 +33,7 @@ drwx--x--- 2 researcher2 research_team 4096 Jul  4 15:12 drafts
 
 From here, we can examine the ""user"", ""group"", and ""other"" permissions. The permissions of each is represented by the first ten characters in each line of code.
 
-#+title: Example 1
+#+name: Example 1
 #+begin_src sh
 drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 .
 #+end_src
@@ -42,7 +42,7 @@ The leading ten character string in /example 1/ explains a lot! The first charac
 
 * Change File Permissions
 
-#+title: Example 2
+#+name: Example 2
 #+begin_src sh
 drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:12 .
 drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 ..
