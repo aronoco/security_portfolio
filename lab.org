@@ -1,0 +1,68 @@
+#+title: File Permission in Linux
+#+author: Corey Aronoff
+
+* Project Description
+In this project, my goal is to edit the permission of files and directories in a Linux system.
+
+* Check File and Directory Details
+First, I want to check the file permissions for files in the ~~/projects~ directory. We do this using the ~ls -la~ command.
+
+
+#+begin_src sh
+researcher2@8588fa80f415:~$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 .
+drwxr-xr-x 1 root        root          4096 Jul  4 15:12 ..
+-rw------- 1 researcher2 research_team    6 Jul  4 15:59 .bash_history
+-rw-r--r-- 1 researcher2 research_team  220 Apr 18  2019 .bash_logout
+-rw-r--r-- 1 researcher2 research_team 3574 Jul  4 15:12 .bashrc
+-rw-r--r-- 1 researcher2 research_team 3574 Jul  4 15:12 .profile
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:12 projects
+researcher2@8588fa80f415:~$ cd projects/
+researcher2@8588fa80f415:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:12 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 ..
+-rw--w---- 1 researcher2 research_team   46 Jul  4 15:12 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul  4 15:12 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Jul  4 15:12 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jul  4 15:12 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_t.txt
+#+end_src
+
+From here, we can examine the ""user"", ""group"", and ""other"" permissions. The permissions of each is represented by the first ten characters in each line of code.
+
+#+title: Example 1
+#+begin_src sh
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 .
+#+end_src
+
+The leading ten character string in /example 1/ explains a lot! The first character, ~d~ tells us that  we are looking at a directory and not a file. After the first character, the next three tell us the permission of the user. In /example 1/ this string is ~rwx~. This tells us the user has read, write and execute permissions. In /example 1/, the user has all three. Similarly, the next three characters tells us the permissions of group, and the last three, other.
+
+* Change File Permissions
+
+#+title: Example 2
+#+begin_src sh
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:12 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 ..
+-rw--w---- 1 researcher2 research_team   46 Jul  4 15:12 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul  4 15:12 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul  4 15:12 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_t.txt
+researcher2@8588fa80f415:~/projects$ chmod u-r,u-w,g-w .project_x.txt
+researcher2@8588fa80f415:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:12 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul  4 15:59 ..
+---------- 1 researcher2 research_team   46 Jul  4 15:12 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul  4 15:12 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul  4 15:12 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul  4 15:12 project_t.txt
+#+end_src
+
+As a Security Analysis, it is necessary to have the ability to edit the permissions of groups. This is done using the ~chmod~ command. In /example 2/, the permissions edited are /user/ and /group/, ~chmod u-r,u-w,g-w .project_x.txt~. First, we remove the read and write permissions from the user. Then, we remove writing permissions from group. There is no difference if we choose to edit the permissions of a directory or file. Hidden or not, the process is the same. I like to check I changed the permissions correctly by using the ~ls -la~ command.
