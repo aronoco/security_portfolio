@@ -1,0 +1,161 @@
+#+title: Algorithm for file updates in Python
+* Project description
+In this project, I am tasked with updating a file that identifies the employees who can access restricted content.  To do this, I need to create an algorithm that uses Python code to check whether the allow list contains any IP addresses identified on a remove list.
+
+* Open the file that contains the allow list
+First, I want to open and read the files contents in python.
+
+#+begin_src python
+
+# Assign `import_file` to the name of the file
+
+import_file = "allow_list.txt"
+
+# Display 'import_file'
+
+print(import_file)
+
+#+end_src
+
+* Read the file contents
+Next, I want to read the file's contents in python. In summary, this code reads the contents of the ~"allow_list.txt"~ file into a string format that allows me to later use the string to organize and extract data in my Python program.
+
+#+begin_src python
+
+# Assign `import_file` to the name of the file
+
+import_file = "allow_list.txt"
+
+# Build `with` statement to read in the initial contents of the file
+
+with open(import_file, "r") as file:
+
+  # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+
+  ip_addresses = file.read()
+
+# Display `ip_addresses`
+
+print(ip_addresses)
+
+#+end_src
+
+* Convert the string into a list
+In order to remove individual IP addresses from the allow list, I needed it to be in list format.
+Therefore, I next used the ~.split()~ method to convert the ~ip_addresses~ string into a list:
+
+#+begin_src python
+
+ip_addresses = ip_addresses.split()
+
+# Display `ip_addresses`
+
+print(ip_addresses)
+
+#+end_src
+
+* Iterate through the remove list
+A key part of my algorithm involves iterating through the IP addresses that are elements in the
+~remove_list~. To do this, I incorporated a ~for~ loop:
+
+#+begin_src python
+
+for element in ip_addresses:
+
+    # Display `element` in every iteration
+
+    print(element)
+
+#+end_src
+
+* Remove IP addresses that are on the remove list
+My algorithm requires removing any IP address from the ~allow list~, ~ip_addresses~, that is also
+contained in ~remove_list~. Because there were not any duplicates in ~ip_addresses~, I was
+able to use the following code to do this:
+
+#+begin_src python
+
+for element in ip_addresses:
+
+  # Build conditional statement
+  # If current element is in `remove_list`,
+
+    if element in remove_list:
+
+        # then current element should be removed from `ip_addresses`
+
+        ip_addresses.remove(element)
+
+# Display `ip_addresses`
+
+print(ip_addresses)
+
+#+end_src
+
+* Update the file with the revised list of IP addresses
+As a final step in my algorithm, I needed to update the allow list file with the revised list of IP
+addresses. To do so, I first needed to convert the list back into a string. I used the ~.join()~
+method for this:
+#+begin_src python
+
+# Convert `ip_addresses` back to a string so that it can be written into the text file
+
+ip_addresses = " ".join(ip_addresses)
+
+# Build `with` statement to rewrite the original file
+
+with open( import_file, "w") as file:
+
+  # Rewrite the file, replacing its contents with `ip_addresses`
+
+  file.write(ip_addresses)
+
+#+end_src
+
+* Summary
+The final product I create into a function so that I can apply the algorithm whenever I need to.
+
+#+begin_src python
+
+def update_file( import_file, remove_list):
+
+    # Build `with` statement to read in the initial contents of the file
+
+    with open(import_file, "r") as file:
+
+        # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+
+        ip_addresses = file.read()
+
+    # Use `.split()` to convert `ip_addresses` from a string to a list
+
+    ip_addresses = ip_addresses.split()
+
+    # Build iterative statement
+    # Name loop variable `element`
+    # Loop through `ip_addresses`
+
+    for element in ip_addresses:
+
+        # Build conditional statement
+        # If current element is in `remove_list`,
+
+        if element in remove_list:
+
+            # then current element should be removed from `ip_addresses`
+
+            ip_addresses.remove(element)
+
+    # Convert `ip_addresses` back to a string so that it can be written into the text file
+
+    ip_addresses = " ".join(ip_addresses)
+
+    # Build `with` statement to rewrite the original file
+
+    with open(import_file, "w") as file:
+
+        # Rewrite the file, replacing its contents with `ip_addresses`
+
+        file.write(ip_addresses)
+
+#+end_src
