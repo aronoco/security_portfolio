@@ -1,0 +1,42 @@
+#+title: Incident Handler's Journal
+* Instructions
+As you continue through this course, you may use this template to record your findings after completing an activity or to take notes on what you've learned about a specific tool or concept. You can also use this journal as a way to log the key takeaways about the different cybersecurity tools or concepts you encounter in this course.
+
+* Entries
+** Entry 1
+|-----------------------+--------------------------------------------------------------------------------------|
+| *Date:* July 23, 2024 | *Entry:* 1                                                                           |
+|-----------------------+--------------------------------------------------------------------------------------|
+| *Description*         | Documenting a cyber security incident                                                |
+|-----------------------+--------------------------------------------------------------------------------------|
+| *Tool(s) used*        | None                                                                                 |
+|-----------------------+--------------------------------------------------------------------------------------|
+| The 5 W's             | *Who:* Organized group of hackers                                                    |
+|                       | *What:* Ransomware security incident                                                 |
+|                       | *Where:* Tuesday 09:00                                                               |
+|                       | *Why:* Happened because group was able to access company systems using phish attack. |
+|                       | After ganing access, performed a ramsomware attack. Motivation appears to be         |
+|                       | financial because note left demands a large sum of money in exchange for decryption  |
+|                       | key.                                                                                 |
+|-----------------------+--------------------------------------------------------------------------------------|
+| *Additional Notes*    | 1. How can the company prevent future attacks?                                       |
+|                       | 2. Should the company pay for decryption key?                                        |
+|-----------------------+--------------------------------------------------------------------------------------|
+
+** Entry 2
+
+|-----------------------+---------------------------------------|
+| *Date:* July 20, 2022 | *Entry:* 2                            |
+|-----------------------+---------------------------------------|
+| *Description:*        | Docuementing a cybersecurity incident |
+|-----------------------+---------------------------------------|
+| *Tool(s) used*        | Email                                 |
+|-----------------------+---------------------------------------|
+| The 5 W's             | *Who:*                                |
+|                       | *What:*                               |
+|                       | *When:*                               |
+|                       | *Where:*                              |
+|                       | *Why:*                                |
+|-----------------------+---------------------------------------|
+| *Additinoal Notes*    |                                       |
+|-----------------------+---------------------------------------|
