@@ -1,61 +1,122 @@
 #+title: Incident Handler's Journal
+
 * Instructions
 As you continue through this course, you may use this template to record your findings after completing an activity or to take notes on what you've learned about a specific tool or concept. You can also use this journal as a way to log the key takeaways about the different cybersecurity tools or concepts you encounter in this course.
 
 * Entries
+** Template Entry
+
+|-----------------------------------------------+----------------------------------------------------------|
+| *Date:* Record the date of the journal entry. | Entry: Record the journal entry number                   |
+|-----------------------------------------------+----------------------------------------------------------|
+| *Description:*                                | Provide a brief description about the journal entry.     |
+|-----------------------------------------------+----------------------------------------------------------|
+| *Tool(s) used*                                | List any cybersecurity tools that were used.             |
+|-----------------------------------------------+----------------------------------------------------------|
+| *The 5 W's*                                   | Capture the 5 W's of an incident                         |
+|                                               | - *Who* caused the incident                              |
+|                                               | - *What* happened?                                       |
+|                                               | - *When* did the incident occur?                         |
+|                                               | - *Where* did the incident happen?                       |
+|                                               | - *Why* did the incident happen?                         |
+|-----------------------------------------------+----------------------------------------------------------|
+| Additional Notes                              | Include any additional thoughts, questions, or findings. |
+|-----------------------------------------------+----------------------------------------------------------|
+
 ** Entry 1
 
-|-----------------------+--------------------------------------------------------------------------------------|
-| *Date:* July 23, 2024 | *Entry:* 1                                                                           |
-|-----------------------+--------------------------------------------------------------------------------------|
-| *Description*         | Documenting a cybersecurity incident                                                 |
-|-----------------------+--------------------------------------------------------------------------------------|
-| *Tool(s) used*        | None                                                                                 |
-|-----------------------+--------------------------------------------------------------------------------------|
-| The 5 W's             | *Who:* Organized group of hackers                                                    |
-|                       | *What:* Ransomware security incident                                                 |
-|                       | *Where:* Tuesday 09:00                                                               |
-|                       | *Why:* Happened because group was able to access company systems using phish attack. |
-|                       | After ganing access, performed a ramsomware attack. Motivation appears to be         |
-|                       | financial because note left demands a large sum of money in exchange for decryption  |
-|                       | key.                                                                                 |
-|-----------------------+--------------------------------------------------------------------------------------|
-| *Additional Notes*    | 1. How can the company prevent future attacks?                                       |
-|                       | 2. Should the company pay for decryption key?                                        |
-|-----------------------+--------------------------------------------------------------------------------------|
+|--------------------------+--------------------------------------------------------------------------------------|
+| *Date:* November 13 2023 | *Entry:* 1                                                                           |
+|--------------------------+--------------------------------------------------------------------------------------|
+| *Description*            | Documenting a cybersecurity incident                                                 |
+|--------------------------+--------------------------------------------------------------------------------------|
+| *Tool(s) used*           | None                                                                                 |
+|--------------------------+--------------------------------------------------------------------------------------|
+| The 5 W's                | *Who:* Organized group of hackers                                                    |
+|                          | *What:* Ransomware security incident                                                 |
+|                          | *Where:* Tuesday 09:00                                                               |
+|                          | *Why:* Happened because group was able to access company systems using phish attack. |
+|                          | After gaining access, performed a ransomware attack. Motivation appears to be        |
+|                          | financial because note left demands a large sum of money in exchange for decryption  |
+|                          | key.                                                                                 |
+|--------------------------+--------------------------------------------------------------------------------------|
+| *Additional Notes*       | 1. How can the company prevent future attacks?                                       |
+|                          | 2. Should the company pay for decryption key?                                        |
+|--------------------------+--------------------------------------------------------------------------------------|
 
 ** Entry 2
 
-|-----------------------+--------------------------------------------------------------------------------------------|
-| *Date:* July 20, 2022 | *Entry:* 2                                                                                 |
-|-----------------------+--------------------------------------------------------------------------------------------|
-| *Description:*        | Docuementing a cybersecurity incident                                                      |
-|-----------------------+--------------------------------------------------------------------------------------------|
-| *Tool(s) used*        | Email                                                                                      |
-|-----------------------+--------------------------------------------------------------------------------------------|
-| The 5 W's             | *Who:* "Clyde West" or "Def Communications"                                                |
-|                       | *What:* The user received a malicious email, may have opened attachements or clicked links |
-|                       | *When:* The email was sent on 2022-07-20                                                   |
-|                       | *Where:* This occured on an employee's computer                                            |
-|                       | *Why:* To gain access to the company's network                                             |
-|-----------------------+--------------------------------------------------------------------------------------------|
-| *Additional Notes*    |                                                                                            |
-|-----------------------+--------------------------------------------------------------------------------------------|
+|---------------------------+--------------------------------------------------|
+| *Date:* November 15 2023  | *Entry:* 2                                       |
+|---------------------------+--------------------------------------------------|
+| *Description:*            | Documenting a cybersecurity incident             |
+|---------------------------+--------------------------------------------------|
+| *Tool(s) used*            | None                                             |
+|---------------------------+--------------------------------------------------|
+| The 5 W's                 | *Who:* "Clyde West" or "Def Communications"      |
+|                           | *What:* Phishing security incident               |
+|                           | *When:* The email was sent on 2022-07-20         |
+|                           | *Where:* This occurred on an employee's computer |
+|                           | *Why:* To gain access to the company's network   |
+|---------------------------+--------------------------------------------------|
+| *Additional Notes*        |                                                  |
+|---------------------------+--------------------------------------------------|
 
 ** Entry 3
 
-|--------------------+--------------------------------------------------------------------------------------------|
-| *Date:* 2022-12-28 | *Entry:* 3                                                                                 |
-|--------------------+--------------------------------------------------------------------------------------------|
-| *Description:*     | Docuementing a cybersecurity incident                                                      |
-|--------------------+--------------------------------------------------------------------------------------------|
-| *Tool(s) used*     | Email                                                                                      |
-|--------------------+--------------------------------------------------------------------------------------------|
-| The 5 W's          | *Who:* "Clyde West" or "Def Communications"                                                |
-|                    | *What:* The user received a malicious email, may have opened attachements or clicked links |
-|                    | *When:* The email was sent on 2022-07-20                                                   |
-|                    | *Where:* This occured on an employee's computer                                            |
-|                    | *Why:* To gain access to the company's network                                             |
-|--------------------+--------------------------------------------------------------------------------------------|
-| *Additional Notes* |                                                                                            |
-|--------------------+--------------------------------------------------------------------------------------------|
+|--------------------------+-----------------------------------------------------------------------------------|
+| *Date:* November 17 2023 | *Entry:* 3                                                                        |
+|--------------------------+-----------------------------------------------------------------------------------|
+| *Description:*           | Inspecting a final report                                                         |
+|--------------------------+-----------------------------------------------------------------------------------|
+| *Tool(s) used*           | None                                                                              |
+|--------------------------+-----------------------------------------------------------------------------------|
+| The 5 W's                | *Who:* The party responsible is not specified. The employee received              |
+|                          | an email from an external email address.                                          |
+|                          | *What:* An email was sent to an employee, claiming that customer data was stolen. |
+|                          | *When:* December 22, 2022 - December 31, 2022                                     |
+|                          | *Where:* Employee email                                                           |
+|                          | *Where:* This occured on an employee's computer                                   |
+|--------------------------+-----------------------------------------------------------------------------------|
+| *Additional Notes*       |                                                                                   |
+|--------------------------+-----------------------------------------------------------------------------------|
+
+** Entry 4
+
+|--------------------------+----------------------------------------------------------------------------------------|
+| *Date:* November 20 2023 | Entry: 4                                                                               |
+|--------------------------+----------------------------------------------------------------------------------------|
+| *Description:*           | Domain analysis in Chronicle                                                           |
+|--------------------------+----------------------------------------------------------------------------------------|
+| *Tool(s) used*           | Chronicle                                                                              |
+|--------------------------+----------------------------------------------------------------------------------------|
+| *The 5 W's*              | Capture the 5 W's of an incident                                                       |
+|                          | - *Who* caused the incident                                                            |
+|                          | The domain, ~signin.office365x24.com~ with the IP ~40.100.174.34~ and ~40.100.174.34~. |
+|                          | - *What* happened?                                                                     |
+|                          | Assets accessed  ~signin.office365x24.com~                                             |
+|                          | - *When* did the incident occur?                                                       |
+|                          | 2023-01-31, 2023-07-08, and 2023-07-09                                                 |
+|                          | - *Where* did the incident happen?                                                     |
+|                          | The assets that have accessed the domain are, ~ashton-davidson-pc~, ~bruce-monroe-pc~, |
+|                          | ~coral-alvarez-pc~, ~emil-palmer-pc~, ~jude-reyes-pc~, and ~roger-spence-pc~.          |
+|                          | Resolved IP's reveal that ~amir-david-pc~ and ~warren-morris-pc~ might have been       |
+|                          | compromised as well.                                                                   |
+|                          | - *Why* did the incident happen?                                                       |
+|                          | Visiting the TIMELINE section in Chronicle, I noticed the ~GET~ and ~POST~ requests    |
+|                          | made from the listed assets. This means that data was sent to the domain, and suggests |
+|                          | a possible successful phish attack.                                                    |
+|                          |                                                                                        |
+|--------------------------+----------------------------------------------------------------------------------------|
+|                          | VT CONTEXT:                                                                            |
+|                          | - 5/88 security vendors flagged domain as malicious                                    |
+| Additional Notes         | ET INTELLIGENCE:                                                                       |
+|                          | - Category: Drop site for logs or stolen credentials                                   |
+|                          | - Severity: Medium                                                                     |
+|                          | SIBLING DOMAINS:                                                                       |
+|                          | - ~login.office365x24.com~                                                             |
+|                          |                                                                                        |
+|                          | Multiple IP's suggest the attacker reused infrastructure for multiple attacks.         |
+|                          | In this case, multiple domain names resolve to the same IP address                     |
+|--------------------------+----------------------------------------------------------------------------------------|
+
